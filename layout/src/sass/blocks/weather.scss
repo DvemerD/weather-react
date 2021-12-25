@@ -1,4 +1,4 @@
-.main {
+.weather {
     position: relative;
     height: 988px;
     &__wrapper {
@@ -20,7 +20,7 @@
             right: 20px;    
         }
     }
-    .list {
+    &__list {
         padding: 0;
         margin: 0;
         list-style-type: none;
