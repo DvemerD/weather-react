@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/segoe-s" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__menu">
+                    <div class="header__menu-boorger">
+                        <span></span>
+                    </div>
+                    <div class="header__menu-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="212.71" height="42.84"
+                            viewBox="0 0 707.626 143.595">
+                            <g id="Logo" transform="translate(-149.292 -17.159)">
+                                <path id="Контур_1" data-name="Контур 1" d="M588.076,57.537V-86.058L731.67,57.537Z"
+                                    transform="translate(-438.783 103.216)" fill="#00ff9b" />
+                                <path id="Контур_2" data-name="Контур 2" d="M0,143.594V0L143.595,143.594Z"
+                                    transform="translate(149.292 160.753) rotate(-90)" fill="#003eff" />
+                                <text id="Minimis" transform="translate(439.918 130.33)" fill="#432c85" font-size="99"
+                                    font-family="SegoeUI-Semibold, Segoe UI" font-weight="600" letter-spacing="0.1em">
+                                    <tspan x="0" y="0">Minimis</tspan>
+                                </text>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="header__title">
+                    <h1 class="header__title-day">TODAY</h1>
+                </div>
+                <div class="header__toggle">
+                    <span class="header__toggle-name">LIGHT</span>
+                    <input type="checkbox" id="toggle-theme">
+                    <label for="toggle-theme" class="toggle-theme">
+                        <div class="toggle-boll"></div>
+                    </label>
+                    <span class="header__toggle-name">DARK</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="container">
+            <div class="main__wrapper">
+                <img src="icons/prev-arrow.svg" alt="prev arrow" class="arrow-prev ">
+                <img  src="icons/next-arrow.svg" alt="next arrow" class=" arrow-next">
+                <ul class="list">
+                    <li class="list-item">
+                        <h2 class="city-name">TUNISIA</h2>
+                        <img src="icons/cloudy-icon.svg" alt="cloudy-icon" class="weather-icon">
+                        <h3 class="temperature__text">20</h3>
+                        <div class="temperature__name">CLOUDY</div>
+                        <div class="temperture__containers">
+                            <div class="temperture__min">18</div>
+                            <div class="temperture__max">26</div>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <h2 class="city-name">FINLAND</h2>
+                        <img src="icons/snowing-icon.svg" alt="snowing-icon" class="weather-icon">
+                        <h3 class="temperature__text">10</h3>
+                        <div class="temperature__name">SNOWING</div>
+                        <div class="temperture__containers">
+                            <div class="temperture__min">-15</div>
+                            <div class="temperture__max">12</div>
+                        </div>
+                    </li>
+                    <li class="list-item list-item_add">
+                        <h2 class="city-name">ADD CITY</h2>
+                        <div class="city-plus"></div>
+                        <img src="icons/city.svg" alt="city images" class="city-img">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
