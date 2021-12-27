@@ -12,8 +12,6 @@ gulp.task('server', function() {
             baseDir: "src"
         }
     });
-
-
 });
 
 gulp.task('styles', function() {
