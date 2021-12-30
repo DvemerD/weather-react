@@ -17,10 +17,12 @@ body {
     max-width: 1920px;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 @import 'blocks/header.scss';
 @import 'blocks/weather.scss';
 @import 'blocks/weather-info.scss';
+@import 'blocks/menu.scss';
+@import 'blocks/form.scss';
 
