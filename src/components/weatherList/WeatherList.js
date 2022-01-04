@@ -11,37 +11,39 @@ import prevArrow from '../../resources/icons/prev-arrow.svg';
 import nextArrow from '../../resources/icons/next-arrow.svg'
 
 const WeatherList = () => {
+    
+
     return (
-        <section class="weather">
-            <div class="container">
-                <div class="weather__wrapper">
-                    <img src={prevArrow} alt="prev arrow" class="arrow-prev " />
-                    <img src={nextArrow} alt="next arrow" class=" arrow-next" />
-                    <ul class="weather__list">
-                        <li class="weather__list-item">
-                            <h2 class="city-name">TUNISIA</h2>
-                            <img src={cloudyIcon} alt="cloudy-icon" class="weather-icon" />
-                            <h3 class="temperature__text">20</h3>
-                            <div class="temperature__name">CLOUDY</div>
-                            <div class="temperture__containers">
-                                <div class="temperture__min">18</div>
-                                <div class="temperture__max">26</div>
+        <section className="weather">
+            <div className="container">
+                <div className="weather__wrapper">
+                    <img src={prevArrow} alt="prev arrow" className="arrow-prev " />
+                    <img src={nextArrow} alt="next arrow" className=" arrow-next" />
+                    <ul className="weather__list">
+                        <li className="weather__list-item">
+                            <h2 className="city-name">TUNISIA</h2>
+                            <img src={cloudyIcon} alt="cloudy-icon" className="weather-icon" />
+                            <h3 className="temperature__text">20</h3>
+                            <div className="temperature__name">CLOUDY</div>
+                            <div className="temperture__containers">
+                                <div className="temperture__min">18</div>
+                                <div className="temperture__max">26</div>
                             </div>
                         </li>
-                        <li class="weather__list-item">
-                            <h2 class="city-name">FINLAND</h2>
-                            <img src={snowingIcon} alt="snowing-icon" class="weather-icon" />
-                            <h3 class="temperature__text">10</h3>
-                            <div class="temperature__name">SNOWING</div>
-                            <div class="temperture__containers">
-                                <div class="temperture__min">-15</div>
-                                <div class="temperture__max">12</div>
+                        <li className="weather__list-item">
+                            <h2 className="city-name">FINLAND</h2>
+                            <img src={snowingIcon} alt="snowing-icon" className="weather-icon" />
+                            <h3 className="temperature__text">10</h3>
+                            <div className="temperature__name">SNOWING</div>
+                            <div className="temperture__containers">
+                                <div className="temperture__min">-15</div>
+                                <div className="temperture__max">12</div>
                             </div>
                         </li>
-                        <li class="weather__list-item weather__list-item_add">
-                            <h2 class="city-name">ADD CITY</h2>
-                            <div class="city-plus"></div>
-                            <img src={cityImg} alt="city images" class="city-img" />
+                        <li className="weather__list-item weather__list-item_add">
+                            <h2 className="city-name">ADD CITY</h2>
+                            <div className="city-plus"></div>
+                            <img src={cityImg} alt="city images" className="city-img" />
                         </li>
                     </ul>
                 </div>
