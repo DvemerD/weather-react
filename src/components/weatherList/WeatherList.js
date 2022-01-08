@@ -1,14 +1,14 @@
 
 import './weatherList.scss';
 
-import cloudyIcon from '../../resources/icons/cloudy-icon.svg';
-// import rainIcon from '../../resources/icons/rain-icon.svg';
-// import sunIcon from '../../resources/icons/sun-icon.svg';
-// import stormIcon from '../../resources/icons/storm-icon.svg';
-import snowingIcon from '../../resources/icons/snowing-icon.svg';
-import cityImg from '../../resources/icons/city.svg';
-import prevArrow from '../../resources/icons/prev-arrow.svg';
-import nextArrow from '../../resources/icons/next-arrow.svg'
+import cloudyIcon from '../../assets/icons/cloudy-icon.svg';
+// import rainIcon from '../../assets/icons/rain-icon.svg';
+// import sunIcon from '../../assets/icons/sun-icon.svg';
+// import stormIcon from '../../assets/icons/storm-icon.svg';
+import snowingIcon from '../../assets/icons/snowing-icon.svg';
+import cityImg from '../../assets/icons/city.svg';
+import prevArrow from '../../assets/icons/prev-arrow.svg';
+import nextArrow from '../../assets/icons/next-arrow.svg'
 
 const WeatherList = () => {
     

@@ -1,15 +1,23 @@
+import { useDispatch, useSelector } from 'react-redux';
+
+import { menuChangeActive } from '../../actions';
+
+import logo from '../../assets/icons/logo.svg';
 
 import './appHeader.scss';
 
-import logo from '../../resources/icons/logo.svg';
-
 const AppHeader = () => {
+    const { menuActive } = useSelector(state => state);
+    const dispatch = useDispatch();
+
     return (
         <header className="header">
             <div className="container">
                 <div className="header__wrapper">
                     <div className="header__menu">
-                        <div className="header__menu-boorger">
+                        <div 
+                            className="header__menu-boorger"
+                            onClick={() => dispatch(menuChangeActive())}>
                             <span></span>
                         </div>
                         <img className="header__menu-logo" src={logo} alt="Logo"/>
