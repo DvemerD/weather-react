@@ -11,7 +11,7 @@
 .menu {
     position: fixed;
     top: 0;
-    left: -100%;
+    left: -150%;
     width: 420px;
     height: 100%;
     z-index: 5;
@@ -80,4 +80,19 @@
 .menu-active {
     left: 0;
     z-index: 11;
+}
+
+@media (max-width: 576px) {
+    .menu {
+        width: 100vw;
+        &__header {
+            padding: 15px;
+        }
+        &__list {
+            padding: 15px;
+        }
+        &__close {
+            right: 5px;
+        }
+    }
 }

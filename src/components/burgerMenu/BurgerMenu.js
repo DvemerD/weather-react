@@ -43,7 +43,7 @@ const BurgerMenu = () => {
                         <Link to="/search-city"
                               className="menu__list-item"  
                               onClick={() => onMenuActive()}>Add City</Link>
-                        <Link to="/search-city"
+                        <Link to="/signup"
                               className="menu__list-item"  
                               onClick={() => onMenuActive()}>Logout</Link>
                     </div>
