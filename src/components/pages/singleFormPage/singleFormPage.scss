@@ -1,0 +1,115 @@
+.form-authorization {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#00b3ff 0%, #9cff95 100%);
+    .form {
+        height: 710px;
+        width: 560px;
+        padding: 75px 0;
+        background-color: #fff;
+        border-radius: 40px;
+        &__title {
+            font-weight: 700;
+            font-size: 50px;
+            letter-spacing: 0.1em;
+            text-align: center;
+            color: #0c1066;
+        }
+        &__mail,
+        &__password {
+            display: block;
+            width: 375px;
+            height: 75px;
+            margin: 0 auto;
+            border: none;
+            border-radius: 40px;
+            -webkit-box-shadow: 0px 0px 28px -1px rgba(34, 60, 80, 0.17);
+            -moz-box-shadow: 0px 0px 28px -1px rgba(34, 60, 80, 0.17);
+            box-shadow: 0px 0px 28px -1px rgba(34, 60, 80, 0.17);
+            margin-top: 40px;
+            padding: 0 30px;
+            &::placeholder {
+                color: rgb(107, 107, 107);
+                font-size: 17px;
+            }
+        }
+        &__btn {
+            display: block;
+            width: 200px;
+            height: 50px;
+            background-color: #00ff9b;
+            border: none;
+            border-radius: 40px;
+            margin: 60px auto 0;
+            font-family: "Segoe UI", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 20px;
+            color: #fff;
+            cursor: pointer;
+            &:hover {
+                background-color: #02eb8e;    
+            }
+        }
+        &__subtitle {
+            text-align: center;
+            margin-top: 100px;
+            color: rgb(51, 51, 51);
+            font-family: "Segoe UI", sans-serif;
+            font-size: 20px;
+        }
+        &__link {
+            text-decoration: none;
+            text-transform: uppercase;
+            color:rgb(255, 58, 130);
+        }
+    }
+}
+
+@media (max-width: 1919px) {
+    .form-authorization {
+        .form {
+            height: 570px;
+            width: 450px;
+            padding: 60px 0;
+            border-radius: 40px;
+            &__title {
+                font-size: 40px;
+            }
+            &__mail,
+            &__password {
+                width: 300px;
+                height: 60px;
+                margin-top: 35px;
+                padding: 0 24px;
+                &::placeholder {
+                    font-size: 14px;
+                }
+            }
+            &__btn {
+                width: 160px;
+                height: 40px;
+                border-radius: 32px;
+                margin: 50px auto 0;
+                font-size: 16px;
+                line-height: 16px;
+            }
+            &__subtitle {
+                margin-top: 80px;
+                font-size: 16px;
+            }  
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .form-authorization {
+        .form {
+            border-radius: 0px;
+            width: 100%;
+        }
+    }
+}

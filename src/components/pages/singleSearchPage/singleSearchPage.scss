@@ -1,7 +1,9 @@
 .search {
     background: linear-gradient(#00b3ff 0%, #9cff95 100%);
-    padding: 80px 0 0;
     height: 100vh;
+    &__inner {
+        padding: 80px 0 0;
+    }
     &__wrapper {
         min-height: 750px;
         max-width: 1280px;
@@ -127,7 +129,9 @@
 
 @media (max-width: 1919px) {
     .search {
-        padding: 64px 0 0;
+        &__inner {
+            padding: 64px 0 0;
+        }
         &__wrapper {
             min-height: 600px;
             max-width: 1024px;
