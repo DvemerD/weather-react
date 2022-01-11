@@ -1,37 +1,47 @@
+import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 
 import WeatherListItem from '../weatherListItem/WeatherListItem';
 import WeatherListItemAdd from '../weatherListItemAdd/WeatherListItemAdd';
-
-import cloudyIcon from '../../assets/icons/cloudy-icon.svg';
-// import rainIcon from '../../assets/icons/rain-icon.svg';
-// import sunIcon from '../../assets/icons/sun-icon.svg';
-// import stormIcon from '../../assets/icons/storm-icon.svg';
-import snowingIcon from '../../assets/icons/snowing-icon.svg';
-import cityImg from '../../assets/icons/city.svg';
-import prevArrow from '../../assets/icons/prev-arrow.svg';
-import nextArrow from '../../assets/icons/next-arrow.svg'
-
-import './weatherList.scss';
+import WeatherListSvgSelector from './WeatherListSvgSelector';
 
 const WeatherList = () => {
+    const { themeMode } = useSelector(state => state);
+
     const weathers = [
-        {city: 'TUNISIA', icon: cloudyIcon, temp: 20, tempName: 'CLOUDY', tempMin: 18, tempMax: 26},
-        {city: 'FINLAND', icon: snowingIcon, temp: 10, tempName: 'SNOWING', tempMin: -15, tempMax: 12}
+        { city: 'TUNISIA', icon: 'cloudy-icon', temp: 20, tempName: 'CLOUDY', tempMin: 18, tempMax: 26 },
+        { city: 'FINLAND', icon: 'snowing-icon', temp: 10, tempName: 'SNOWING', tempMin: -15, tempMax: 12 }
     ]
-    
-    const renderWeathers = weathers.map(item => {
-        return <WeatherListItem {...item} />
+
+    useEffect(() => {
+        const root = document.querySelector(':root');
+        const components = ['weather-list-bgr'];
+
+        components.forEach(component => {
+            root.style.setProperty(
+                `--${component}-default`,
+                `var(--${component}-${themeMode})`
+            )
+        })
+    })
+
+    const renderWeathers = weathers.map((item, i) => {
+        return <WeatherListItem key={i} {...item} />
     })
 
     return (
         <section className="weather">
             <div className="container">
                 <div className="weather__wrapper">
-                    <img src={prevArrow} alt="prev arrow" className="arrow-prev " />
-                    <img src={nextArrow} alt="next arrow" className=" arrow-next" />
+                    <div className="arrow-prev ">
+                        <WeatherListSvgSelector id="prev-arrow"/>
+                    </div>
+                    <div className=" arrow-next">
+                        <WeatherListSvgSelector id="next-arrow"/>
+                    </div>
                     <div className="weather__list">
                         {renderWeathers}
-                        <WeatherListItemAdd/>
+                        <WeatherListItemAdd />
                     </div>
                 </div>
             </div>
