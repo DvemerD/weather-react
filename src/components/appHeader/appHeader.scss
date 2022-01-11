@@ -1,9 +1,13 @@
+@import '../../style/variables.scss';
+
 .header {
     -webkit-box-shadow: 0px 9px 19px -8px rgba(34, 60, 80, 0.36);
     -moz-box-shadow: 0px 9px 19px -8px rgba(34, 60, 80, 0.36);
     box-shadow: 0px 9px 19px -8px rgba(34, 60, 80, 0.36);
     width: 100%;
-    background-color: #fff;
+    position: relative;
+    z-index: 8;
+    background: var(#{--header-bgr-default});
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -26,7 +30,7 @@
         // z-index: 6;
         cursor: pointer;
         span {
-            background-color: #594e78;
+            background-color: var(#{--burger-menu-default});
             width: 100%;
             height: 4px;
             border-radius: 35px;
@@ -35,7 +39,7 @@
             transform: translateY(50%);
             &::after,
             &::before {
-                background-color: #594e78;
+                background-color: var(#{--burger-menu-default});
                 width: 100%;
                 height: 4px;
                 border-radius: 35px;
@@ -51,13 +55,22 @@
             }
         }
     }
+    &__menu-logo {
+        width: 214px;
+        height: 43px;
+        > svg {
+            width: 100%;
+            height: 100%;
+            fill: var(#{--logo-text-default});
+        }
+    }
     &__title-day {
         display: block;
         padding: 0;
         margin: 0;
         font-size: 30px;
         font-weight: 600;
-        color: #221c48;
+        color: var(#{--header-title-default});
         text-transform: uppercase;
         text-align: center;
     }
@@ -67,7 +80,7 @@
     }
     &__toggle-name {
         text-transform: uppercase;
-        color: #25227b;
+        color: var(#{--toggle-name-default});
         font-weight: 300;
         font-size: 18px;
         line-height: 24px;
@@ -83,15 +96,25 @@
         border-radius: 11px;
         position: relative;
         margin: 0px 30px;
+        transition: all 1s;
+        cursor: pointer;
     }
     .toggle-boll {
         width: 30px;
         height: 30px;
-        background: #332755;
+        background: var(#{--toggle-boll-default});
         border-radius: 50px;
         position: absolute;
         top: 50%;
+        left: 0;
         transform: translateY(-50%);
+        transition: left .6s;
+    }
+    .toggle-theme_active {
+        background-color: #ff0070;
+    }
+    .toggle-boll_active {
+        left: 26px;
     }
 }
 
