@@ -1,5 +1,6 @@
 const initialState = {
-    menuActive: false
+    menuActive: false,
+    themeMode: 'light'
 }
 
 const reducer = (state = initialState, action) => {
@@ -8,6 +9,11 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 menuActive: !state.menuActive
+            }
+        case 'THEME_MODE_CHANGE':
+            return {
+                ...state,
+                themeMode: state.themeMode === 'light' ? 'dark' : 'light'
             }
         default: return state
     }

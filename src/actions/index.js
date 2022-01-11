@@ -3,3 +3,9 @@ export const menuChangeActive = () => {
         type: 'MENU_CHANGE_ACTIVE'
     }
 }
+
+export const themeModeChange = () => {
+    return {
+        type: 'THEME_MODE_CHANGE'
+    }
+}
