@@ -1,0 +1,86 @@
+// header
+$burger-menu-light: #594e78;
+$burger-menu-dark: #fff;
+
+$logo-text-light: #432c85;
+$logo-text-dark: #fff;
+
+$header-bgr-light: #fff;
+$header-bgr-dark: #2b244d;
+$header-title-dark: #fff;
+$header-title-light: #221c48;
+
+$toggle-name-light: #25227b;
+$toggle-name-dark: #fff;
+$toggle-bg-active: #ff0070;
+$toggle-boll-light: #332755;
+$toggle-boll-dark: #fff;
+$toggle-bg: #747474;
+
+// weatherList
+
+$weather-list-bgr-light: #fff;
+$weather-list-bgr-dark: linear-gradient(#b290ff 0%, #2e1d65 100%);;
+
+$weather-list-item-bgr-light: #fff;
+$weather-list-item-bgr-dark: linear-gradient(#00057a 0%, #721c87 100%);
+
+$weather-list-text-light: #020202;
+$weather-list-text-dark: #fff;
+
+$weather-list-degree-light: #707070;
+$weather-list-degree-dark: #fff;
+
+$weather-list-temp-name-light: #432c85;
+$weather-list-temp-name-dark: #fff;
+
+:root {
+    //header
+    --burger-menu-light: #{$burger-menu-light};
+    --burger-menu-dark: #{$burger-menu-dark};
+    --burger-menu-default: var(#{--burger-menu-light});
+
+    --logo-text-light: #{$logo-text-light};
+    --logo-text-dark: #{$logo-text-dark};
+    --logo-text-default: var(#{--logo-text-light});
+
+    --header-bgr-light: #{$header-bgr-light};
+    --header-bgr-dark: #{$header-bgr-dark};
+    --header-bgr-default: var(#{--header-bgr-light});
+
+    --header-title-light: #{$header-title-light};
+    --header-title-dark: #{$header-title-dark};
+    --header-title-default: var(#{--header-title-light});
+
+    --toggle-name-light: #{$toggle-name-light};
+    --toggle-name-dark: #{$toggle-name-dark};
+    --toggle-name-default: var(#{--toggle-name-light});
+
+    --toggle-boll-light: #{$toggle-boll-light};
+    --toggle-boll-dark: #{$toggle-boll-dark};
+    --toggle-boll-default: var(#{--toggle-boll-light});
+
+    //weatherList
+
+    --weather-list-bgr-light: #{$weather-list-bgr-light};
+    --weather-list-bgr-dark: #{$weather-list-bgr-dark};
+    --weather-list-bgr-default: var(#{--weather-list-bgr-light}); 
+
+    //weatherListItem
+
+    --weather-list-item-bgr-light: #{$weather-list-item-bgr-light};
+    --weather-list-item-bgr-dark: #{$weather-list-item-bgr-dark};
+    --weather-list-item-bgr-default: var(#{--weather-list-item-bgr-light});
+
+    --weather-list-text-light: #{$weather-list-text-light};
+    --weather-list-text-dark: #{$weather-list-text-dark};
+    --weather-list-text-default: var(#{--weather-list-text-light});
+
+    --weather-list-degree-light: #{$weather-list-degree-light};
+    --weather-list-degree-dark: #{$weather-list-degree-dark};
+    --weather-list-degree-default: var(#{--weather-list-degree-light});
+    
+    --weather-list-temp-name-light: #{$weather-list-temp-name-light};
+    --weather-list-temp-name-dark: #{$weather-list-temp-name-dark};
+    --weather-list-temp-name-default: var(#{--weather-list-temp-name-light});
+}
