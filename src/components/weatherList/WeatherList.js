@@ -23,7 +23,7 @@ const WeatherList = () => {
                 `var(--${component}-${themeMode})`
             )
         })
-    })
+    }, [themeMode])
 
     const renderWeathers = weathers.map((item, i) => {
         return <WeatherListItem key={i} {...item} />

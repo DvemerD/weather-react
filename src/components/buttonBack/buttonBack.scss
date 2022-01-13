@@ -3,7 +3,7 @@
     top: 80px;
     left: 100px;
     &-btn {
-        background-color: #0fd;
+        background-color: var(#{--button-back-bgr-default});
         border: none;
         width: 78px;
         height: 78px;

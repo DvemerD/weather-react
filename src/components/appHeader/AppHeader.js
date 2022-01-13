@@ -38,7 +38,7 @@ const AppHeader = () => {
                 `var(--${component}-${themeMode})`
             )
         })
-    })
+    }, [themeMode])
 
     return (
         <header className="header">

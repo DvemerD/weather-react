@@ -1,5 +1,5 @@
 .search {
-    background: linear-gradient(#00b3ff 0%, #9cff95 100%);
+    background: var(#{--weather-search-bgr-default});
     height: 100vh;
     &__inner {
         padding: 80px 0 0;
@@ -8,7 +8,7 @@
         min-height: 750px;
         max-width: 1280px;
         margin: 0 auto;
-        background-color: #fff;
+        background: var(#{--weather-search-form-bgr-default});
         display: flex;
         border-radius: 37px;
         overflow: hidden;
@@ -22,7 +22,7 @@
             margin: 0 auto;
         }
         &__title {
-            color: #0c1066;
+            color: var(#{--weather-search-title-default});;
             text-align: center;
             font-weight: 700;
             font-size: 37px;
@@ -42,6 +42,7 @@
             padding: 0 30px;
             margin-top: 60px;
             outline: none;
+            font-size: 17px;
         }
         &__btn {
             position: absolute;
@@ -51,7 +52,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #31feae;
+            background-color: var(#{--weather-search-btn-default});
             height: 90px;
             width: 90px;
             border-radius: 100%;
@@ -65,7 +66,7 @@
     &__content {
         width: 50%;
         padding: 60px 37px;
-        background-color: #58dfc471;
+        background: var(#{--weather-search-content-default});;
         text-align: center;
     }
     &__name {
@@ -73,7 +74,7 @@
         font-size: 37px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #0c1066;
+        color: var(#{--weather-search-title-default});
         text-align: center;
     }
     &__icon {
@@ -90,6 +91,7 @@
         line-height: 125px;
         text-align: center;
         position: relative;
+        color: var(#{--weather-search-text-default});
         &::after {
             content: "";
             display: block;
@@ -97,7 +99,7 @@
             width: 25px;
             height: 25px;
             border-radius: 100%;
-            border: 3px solid #707070;
+            border: 3px solid var(#{--weather-search-degree-default});
             background-color: transparent;
             top: 0px;
             right: -30px;
@@ -109,7 +111,7 @@
         font-size: 37px;
         line-height: 37px;
         letter-spacing: 0.1em;
-        color: #0c1066;
+        color: var(#{--weather-search-temp-name-default});
         text-transform: uppercase;
         text-align: center;
     }
@@ -121,7 +123,7 @@
         color: #fff;
         font-size: 20px;
         font-weight: 700;
-        background-color: #31feae;
+        background-color: var(#{--weather-search-btn-default});
         cursor: pointer;
         margin: 45px auto 0;
     }

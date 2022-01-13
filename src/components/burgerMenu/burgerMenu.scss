@@ -17,7 +17,7 @@
     z-index: 5;
     transition: all .8s;
     &__header {
-        background: linear-gradient(to right, #00ff9b, #5f84fb);
+        background: var(#{--menu-header-bgr-default});
         height: 200px;
         padding: 30px;
     }
@@ -44,13 +44,13 @@
     }
     &__list {
         height: 100vh;
-        background-color: #fff;
+        background-color: var(#{--menu-list-bgr-default});
         list-style-type: none;
         padding: 30px 30px;
     }
     &__list-item {
         display: block;
-        color: #000;
+        color: var(#{--menu-list-text-color-default});
         padding: 20px 0px;
         font-size: 18px;
         cursor: pointer;
@@ -72,12 +72,12 @@
     }
 }
 
-.overlay-active {
+.overlay_active {
     background-color: rgba(0, 0, 0, 0.56);     
     pointer-events: auto;
 }
 
-.menu-active {
+.menu_active {
     left: 0;
     z-index: 11;
 }

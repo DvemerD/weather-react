@@ -1,4 +1,5 @@
-
+import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 
 import ButtonBack from '../../buttonBack/ButtonBack';
 import HeaderWeatherInfo from '../../headerWeatherInfo/HeaderWeatherInfo';
@@ -8,6 +9,23 @@ import WeatherDayList from '../../weatherDayList/WeatherDayList';
 import './singleWeatherPage.scss';
 
 const SingleWeatherPage = () => {
+    const { themeMode } = useSelector(state => state);
+
+    useEffect(() => {
+        const root = document.querySelector(':root');
+        const components = [
+            'circle-bgr-first',
+            'circle-bgr-second'
+        ];
+
+        components.forEach(component => {
+            root.style.setProperty(
+                `--${component}-default`,
+                `var(--${component}-${themeMode})`
+            )
+        })
+    }, [themeMode])
+
     return (
         <section className="weather-info">
             <div className="container">

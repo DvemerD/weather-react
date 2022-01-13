@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
 import arrowBack from '../../assets/icons/arrow-back.svg';
@@ -6,6 +8,21 @@ import './buttonBack.scss';
 
 const ButtonBack = () => {
     const history = useHistory();
+    const { themeMode } = useSelector(state => state);
+    
+    useEffect(() => {
+        const root = document.querySelector(':root');
+        const components = [
+            'button-back-bgr',
+        ];
+
+        components.forEach(component => {
+            root.style.setProperty(
+                `--${component}-default`,
+                `var(--${component}-${themeMode})`
+            )
+        })
+    }, [themeMode])
 
     return (
         <div onClick={() => history.goBack()} 

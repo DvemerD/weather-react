@@ -22,7 +22,7 @@ const WeatherListItem = ({ city, icon, temp, tempName, tempMin, tempMax }) => {
                 `var(--${component}-${themeMode})`
             )
         })
-    })
+    }, [themeMode])
     
     return (
         <Link to="/weather-info">

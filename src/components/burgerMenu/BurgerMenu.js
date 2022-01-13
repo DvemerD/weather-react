@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import classNames from 'classnames';
@@ -9,11 +10,27 @@ import userImg from '../../assets/icons/user.svg';
 import './burgerMenu.scss';
 
 const BurgerMenu = () => {
-    const { menuActive } = useSelector(state => state);
+    const { menuActive, themeMode } = useSelector(state => state);
     const dispatch = useDispatch();
 
-    const overlayClass = classNames("overlay", { "overlay-active": menuActive }),
-        menuClass = classNames("menu", { "menu-active": menuActive });
+    const overlayClass = classNames("overlay", { "overlay_active": menuActive }),
+        menuClass = classNames("menu", { "menu_active": menuActive });
+
+    useEffect(() => {
+        const root = document.querySelector(':root');
+        const components = [
+            'menu-header-bgr',
+            'menu-list-text-color',
+            'menu-list-bgr'
+        ];
+
+        components.forEach(component => {
+            root.style.setProperty(
+                `--${component}-default`,
+                `var(--${component}-${themeMode})`
+            )
+        })
+    }, [themeMode])
 
     const onMenuActive = () => {
         dispatch(menuChangeActive());
@@ -38,14 +55,14 @@ const BurgerMenu = () => {
                     </div>
                     <div className="menu__list">
                         <Link to="/"
-                              className="menu__list-item"  
-                              onClick={() => onMenuActive()}>Home</Link>
+                            className="menu__list-item"
+                            onClick={() => onMenuActive()}>Home</Link>
                         <Link to="/search-city"
-                              className="menu__list-item"  
-                              onClick={() => onMenuActive()}>Add City</Link>
+                            className="menu__list-item"
+                            onClick={() => onMenuActive()}>Add City</Link>
                         <Link to="/signup"
-                              className="menu__list-item"  
-                              onClick={() => onMenuActive()}>Logout</Link>
+                            className="menu__list-item"
+                            onClick={() => onMenuActive()}>Logout</Link>
                     </div>
                 </div>
             </div>
