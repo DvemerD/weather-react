@@ -1,10 +1,16 @@
-import { useEffect } from 'react';
-import { useSelector } from 'react-redux';
-import snowingIcon from '../../assets/icons/snowing-icon.svg';
+import { useEffect, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+
+import Spinner from '../spinner/Spinner';
+
+import GlobalIconSvgSelector from '../../shared/GlobalIconSvgSelector';
 
 const SearchCityContent = () => {
-    const { themeMode } = useSelector(state => state);
+    const { themeMode,
+        currentWeather,
+        currentWeatherLoadingStatus } = useSelector(state => state);
 
+    console.log('reCont');
     useEffect(() => {
         const root = document.querySelector(':root');
         const components = [
@@ -24,16 +30,34 @@ const SearchCityContent = () => {
                 `var(--${component}-${themeMode})`
             )
         })
-    }, [themeMode])
+    }, [themeMode]);
 
     return (
         <div className="search__content">
-            <h2 className="search__name">FINLAND</h2>
-            <img src={snowingIcon} alt="snowing-icon" className="search__icon"/>
-                <h3 className="search__text">10</h3>
-                <div className="search__weather-name">SNOWING</div>
-                <button className="search__btn">FOLLOWED</button>
+            <div className="search__content-inner">
+                {currentWeatherLoadingStatus === 'first-idle' ? <div className="search__name">Choose city</div> :
+                    currentWeatherLoadingStatus === 'loading' ? <Spinner /> :
+                        currentWeatherLoadingStatus === 'error' ? <div className="search__name">Loading error</div> :
+                            <View data={currentWeather} />
+                }
+            </div>
         </div>
+    )
+}
+
+const View = ({ data }) => {
+    const { nameCity, description, icon, temp } = data;
+
+    return (
+        <>
+            <h2 className="search__name">{nameCity}</h2>
+            <div className="search__icon">
+                <GlobalIconSvgSelector id={`${icon}-icon`} />
+            </div>
+            <h3 className="search__text">{temp}</h3>
+            <div className="search__weather-name">{description}</div>
+            <button className="search__btn">FOLLOWED</button>
+        </>
     )
 }
 
