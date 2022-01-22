@@ -112,6 +112,14 @@ $form-btn-bgr-dark: #2b244d;
 $form-subtitle-color-light: rgb(51, 51, 51);
 $form-subtitle-color-dark: #fff;
 
+//spinner
+
+$spinner-first-circle-light: #00ff9b;
+$spinner-first-circle-dark: #fff;
+
+$spinner-second-circle-light: #5f84fb;
+$spinner-second-circle-dark: #432c85;
+
 :root {
     //header
     --burger-menu-light: #{$burger-menu-light};
@@ -257,4 +265,14 @@ $form-subtitle-color-dark: #fff;
     --form-subtitle-color-light: #{$form-subtitle-color-light};
     --form-subtitle-color-dark: #{$form-subtitle-color-dark};
     --form-subtitle-color-default: var(#{--form-subtitle-color-light});
+
+    //spinner
+
+    --spinner-first-circle-light: #{$spinner-first-circle-light};
+    --spinner-first-circle-dark: #{$spinner-first-circle-dark};
+    --spinner-first-circle-default: var(#{--spinner-first-circle-light});
+
+    --spinner-second-circle-light: #{$spinner-second-circle-light};
+    --spinner-second-circle-dark: #{$spinner-second-circle-dark};
+    --spinner-second-circle-default: var(#{--spinner-second-circle-light});
 }

@@ -30,3 +30,16 @@ export const currentWeatherFetchingError = () => {
         type: 'CURRENT_WEATHER_FETCHING_ERROR'
     }
 }
+
+export const currentWeatherClear = () => {
+    return {
+        type: 'CURRENT_WEATHER_CLEAR'
+    }
+}
+
+export const addCityWeatherList = (nameCity) => {
+    return {
+        type: 'ADD_CITY_WEATHER_LIST',
+        payload: nameCity
+    }
+}
