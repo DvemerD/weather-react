@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import Spinner from '../../../../shared/spinner/Spinner';
 
@@ -46,9 +47,9 @@ const View = ({ data, onFollowedWeather }) => {
             </div>
             <h3 className="search__text">{temp}</h3>
             <div className="search__weather-name">{description}</div>
-            <button 
+            <Link to="/" 
                 className="search__btn"
-                onClick={() => {onFollowedWeather(nameCity)}}>FOLLOWED</button>
+                onClick={() => {onFollowedWeather(nameCity)}}>FOLLOWED</Link>
         </>
     )
 }

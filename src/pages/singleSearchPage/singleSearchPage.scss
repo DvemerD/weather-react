@@ -210,7 +210,7 @@
 @media (max-width: 768px) {
     .search {
         &__wrapper {
-            flex-direction: column-reverse;
+            flex-direction: column;
         }
         .form {
             width: 100%;

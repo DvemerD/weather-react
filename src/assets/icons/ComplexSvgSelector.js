@@ -43,24 +43,24 @@ const ComplexSvgSelector = ({ id }) => {
                         <path id="Bridge" d="M1580.487,875.465c.978-.3-17.851-39.028.259-85.281,43.6.158,39.974,0,39.974,0s-11.39,42.656,5.458,85.281C1578.79,873.793,1579.509,875.766,1580.487,875.465Z" transform="translate(8 40)" fill="#ccc8ff" />
                         <g id="Water_Turbulence" data-name="Water Turbulence" transform="translate(8 40)">
                             <g id="Сгруппировать_4" data-name="Сгруппировать 4">
-                                <path id="Контур_42" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" stroke-width="2" />
-                                <path id="Контур_43" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" stroke-width="2" />
+                                <path id="Контур_42" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
+                                <path id="Контур_43" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
                             </g>
                             <g id="Сгруппировать_5" data-name="Сгруппировать 5" transform="translate(74 -14)">
-                                <path id="Контур_42-2" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" stroke-width="2" />
-                                <path id="Контур_43-2" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" stroke-width="2" />
+                                <path id="Контур_42-2" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
+                                <path id="Контур_43-2" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
                             </g>
                             <g id="Сгруппировать_8" data-name="Сгруппировать 8" transform="translate(85 17)">
-                                <path id="Контур_42-3" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" stroke-width="2" />
-                                <path id="Контур_43-3" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" stroke-width="2" />
+                                <path id="Контур_42-3" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
+                                <path id="Контур_43-3" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
                             </g>
                             <g id="Сгруппировать_17" data-name="Сгруппировать 17" transform="translate(315 14)">
-                                <path id="Контур_42-4" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" stroke-width="2" />
-                                <path id="Контур_43-4" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" stroke-width="2" />
+                                <path id="Контур_42-4" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
+                                <path id="Контур_43-4" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
                             </g>
                             <g id="Сгруппировать_18" data-name="Сгруппировать 18" transform="translate(245 -17)">
-                                <path id="Контур_42-5" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" stroke-width="2" />
-                                <path id="Контур_43-5" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" stroke-width="2" />
+                                <path id="Контур_42-5" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
+                                <path id="Контур_43-5" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
                             </g>
                         </g>
                         <g id="Fence" transform="translate(8 40)">
@@ -75,13 +75,13 @@ const ComplexSvgSelector = ({ id }) => {
                                 <rect id="Прямоугольник_16" data-name="Прямоугольник 16" width="5" height="25" rx="2" transform="translate(1500 858)" fill="#606cb9" />
                             </g>
                             <g id="Ropes">
-                                <path id="Контур_45-2" data-name="Контур 45" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(0 4)" fill="none" stroke="#a1ffd9" stroke-width="3" />
-                                <path id="Контур_46-2" data-name="Контур 46" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(25 5)" fill="none" stroke="#a1ffd9" stroke-width="3" />
-                                <path id="Контур_47-2" data-name="Контур 47" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(50 3)" fill="none" stroke="#a1ffd9" stroke-width="3" />
-                                <path id="Контур_48-2" data-name="Контур 48" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(75 5)" fill="none" stroke="#a1ffd9" stroke-width="3" />
-                                <path id="Контур_49" data-name="Контур 49" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(101 3)" fill="none" stroke="#a1ffd9" stroke-width="3" />
-                                <path id="Контур_50" data-name="Контур 50" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(125 7)" fill="none" stroke="#a1ffd9" stroke-width="3" />
-                                <path id="Контур_51" data-name="Контур 51" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(150 5)" fill="none" stroke="#a1ffd9" stroke-width="3" />
+                                <path id="Контур_45-2" data-name="Контур 45" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(0 4)" fill="none" stroke="#a1ffd9" strokeWidth="3" />
+                                <path id="Контур_46-2" data-name="Контур 46" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(25 5)" fill="none" stroke="#a1ffd9" strokeWidth="3" />
+                                <path id="Контур_47-2" data-name="Контур 47" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(50 3)" fill="none" stroke="#a1ffd9" strokeWidth="3" />
+                                <path id="Контур_48-2" data-name="Контур 48" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(75 5)" fill="none" stroke="#a1ffd9" strokeWidth="3" />
+                                <path id="Контур_49" data-name="Контур 49" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(101 3)" fill="none" stroke="#a1ffd9" strokeWidth="3" />
+                                <path id="Контур_50" data-name="Контур 50" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(125 7)" fill="none" stroke="#a1ffd9" strokeWidth="3" />
+                                <path id="Контур_51" data-name="Контур 51" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(150 5)" fill="none" stroke="#a1ffd9" strokeWidth="3" />
                             </g>
                         </g>
                         <g id="Parasoles" transform="translate(8 41)">
@@ -106,8 +106,8 @@ const ComplexSvgSelector = ({ id }) => {
                 <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="405.575" height="331.42" viewBox="0 0 405.575 331.42">
                     <defs>
                         <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-                            <stop offset="0" stop-color="#43aaaa" />
-                            <stop offset="1" stop-color="#364ac5" />
+                            <stop offset="0" stopColor="#43aaaa" />
+                            <stop offset="1" stopColor="#364ac5" />
                         </linearGradient>
                     </defs>
                     <g id="Сгруппировать_46" data-name="Сгруппировать 46" transform="translate(-1353.782 -599.58)">
@@ -152,24 +152,24 @@ const ComplexSvgSelector = ({ id }) => {
                             <path id="Bridge" d="M1580.487,875.465c.978-.3-17.851-39.028.259-85.281,43.6.158,39.974,0,39.974,0s-11.39,42.656,5.458,85.281C1578.79,873.793,1579.509,875.766,1580.487,875.465Z" transform="translate(8 40)" fill="#615e8a" />
                             <g id="Water_Turbulence" data-name="Water Turbulence" transform="translate(8 40)">
                                 <g id="Сгруппировать_4" data-name="Сгруппировать 4">
-                                    <path id="Контур_42" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" stroke-width="2" />
-                                    <path id="Контур_43" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" stroke-width="2" />
+                                    <path id="Контур_42" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
+                                    <path id="Контур_43" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
                                 </g>
                                 <g id="Сгруппировать_5" data-name="Сгруппировать 5" transform="translate(74 -14)">
-                                    <path id="Контур_42-2" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" stroke-width="2" />
-                                    <path id="Контур_43-2" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" stroke-width="2" />
+                                    <path id="Контур_42-2" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
+                                    <path id="Контур_43-2" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
                                 </g>
                                 <g id="Сгруппировать_8" data-name="Сгруппировать 8" transform="translate(85 17)">
-                                    <path id="Контур_42-3" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" stroke-width="2" />
-                                    <path id="Контур_43-3" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" stroke-width="2" />
+                                    <path id="Контур_42-3" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
+                                    <path id="Контур_43-3" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
                                 </g>
                                 <g id="Сгруппировать_17" data-name="Сгруппировать 17" transform="translate(315 14)">
-                                    <path id="Контур_42-4" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" stroke-width="2" />
-                                    <path id="Контур_43-4" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" stroke-width="2" />
+                                    <path id="Контур_42-4" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
+                                    <path id="Контур_43-4" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
                                 </g>
                                 <g id="Сгруппировать_18" data-name="Сгруппировать 18" transform="translate(245 -17)">
-                                    <path id="Контур_42-5" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" stroke-width="2" />
-                                    <path id="Контур_43-5" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" stroke-width="2" />
+                                    <path id="Контур_42-5" data-name="Контур 42" d="M1386.329,831.326s18.213,3.509,21.8-5.227" transform="translate(11.849 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
+                                    <path id="Контур_43-5" data-name="Контур 43" d="M1401.35,831.326a23.044,23.044,0,0,1-3.78.626c-3.735.334-9.631-.157-11.241-5.853" transform="translate(32.13 1.991)" fill="none" stroke="#fff" strokeWidth="2" />
                                 </g>
                             </g>
                             <g id="Fence" transform="translate(8 40)">
@@ -184,13 +184,13 @@ const ComplexSvgSelector = ({ id }) => {
                                     <rect id="Прямоугольник_16" data-name="Прямоугольник 16" width="5" height="25" rx="2" transform="translate(1500 858)" fill="#606cb9" />
                                 </g>
                                 <g id="Ropes">
-                                    <path id="Контур_45-2" data-name="Контур 45" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(0 4)" fill="none" stroke="#a1ffd9" stroke-width="3" />
-                                    <path id="Контур_46-2" data-name="Контур 46" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(25 5)" fill="none" stroke="#a1ffd9" stroke-width="3" />
-                                    <path id="Контур_47-2" data-name="Контур 47" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(50 3)" fill="none" stroke="#a1ffd9" stroke-width="3" />
-                                    <path id="Контур_48-2" data-name="Контур 48" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(75 5)" fill="none" stroke="#a1ffd9" stroke-width="3" />
-                                    <path id="Контур_49" data-name="Контур 49" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(101 3)" fill="none" stroke="#a1ffd9" stroke-width="3" />
-                                    <path id="Контур_50" data-name="Контур 50" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(125 7)" fill="none" stroke="#a1ffd9" stroke-width="3" />
-                                    <path id="Контур_51" data-name="Контур 51" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(150 5)" fill="none" stroke="#a1ffd9" stroke-width="3" />
+                                    <path id="Контур_45-2" data-name="Контур 45" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(0 4)" fill="none" stroke="#a1ffd9" strokeWidth="3" />
+                                    <path id="Контур_46-2" data-name="Контур 46" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(25 5)" fill="none" stroke="#a1ffd9" strokeWidth="3" />
+                                    <path id="Контур_47-2" data-name="Контур 47" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(50 3)" fill="none" stroke="#a1ffd9" strokeWidth="3" />
+                                    <path id="Контур_48-2" data-name="Контур 48" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(75 5)" fill="none" stroke="#a1ffd9" strokeWidth="3" />
+                                    <path id="Контур_49" data-name="Контур 49" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(101 3)" fill="none" stroke="#a1ffd9" strokeWidth="3" />
+                                    <path id="Контур_50" data-name="Контур 50" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(125 7)" fill="none" stroke="#a1ffd9" strokeWidth="3" />
+                                    <path id="Контур_51" data-name="Контур 51" d="M1377.5,858c.427-.951,14.2,16.906,25.443,0" transform="translate(150 5)" fill="none" stroke="#a1ffd9" strokeWidth="3" />
                                 </g>
                             </g>
                         </g>

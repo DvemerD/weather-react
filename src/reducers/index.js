@@ -47,6 +47,7 @@ const reducer = (state = initialState, action) => {
                 [...state.cityWeatherList, action.payload] : state.cityWeatherList
                 
             }
+        
         default: return state
     }
 }

@@ -11,6 +11,7 @@ import SingleFormPage from './pages/singleFormPage/SingleFormPage';
 import SingleSearchPage from './pages/singleSearchPage/SingleSearchPage';
 import SingleWeatherListPage from './pages/singleWeatherListPage/SingleWeatherListPage';
 import SingleWeatherPage from './pages/singleWeatherPage/SingleWeatherPage';
+import Page404 from "./pages/page404/Page404";
 
 const App = () => {
     const { themeMode } = useSelector(state => state);
@@ -35,6 +36,12 @@ const App = () => {
                 </Route>
                 <Route exact path="/weather-info">
                     <SingleWeatherPage/>   
+                </Route>
+                <Route exact path="/weather-info/:nameCity">
+                    <SingleWeatherPage/>   
+                </Route>
+                <Route path="*">
+                    <Page404/>
                 </Route>
             </Switch>
             <BurgerMenu />
