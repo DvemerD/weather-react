@@ -1,7 +1,10 @@
 
 import WeatherIconSvgSelector from '../../../../assets/icons/WeatherIconSvgSelector';
 
-const HeaderWeatherInfo = () => {
+const HeaderWeatherInfo = ({ nameCity, dataWeather }) => {
+    console.log()
+    const { main: { temp }, weather: [{ main }] } = dataWeather;
+
     return (
         <div className="weather-info__header">
             <div>
@@ -9,13 +12,14 @@ const HeaderWeatherInfo = () => {
                     <WeatherIconSvgSelector id={'clouds-icon'} />
                 </div>
                 <div className="weather-info__text">
-                    <h3 className="weather-info__temp">15&deg;</h3>
-                    <div className="weather-info__name">CLOUDY</div>
+                    <h3 className="weather-info__temp">{Math.round(temp)}&deg;</h3>
+                    <div className="weather-info__name">{main}</div>
                 </div>
             </div>
-            <h2 className="weather-info__city">TUNISIA</h2>
+            <h2 className="weather-info__city">{nameCity}</h2>
         </div>
     )
+
 }
 
 export default HeaderWeatherInfo;

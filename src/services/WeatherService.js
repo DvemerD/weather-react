@@ -11,9 +11,9 @@ const useWeatherService = () => {
         return _transformCurrentWeather(result);
     }
 
-    const getCurrentWeekWeather = async (cityName) => {
+    const getFiveDaysWeather = async (cityName) => {
         const result = await request(`${_apiBase}forecast?q=${cityName}&units=metric&appid=${_apiKey}`);
-        return result;
+        return _transformFiveDaysWeather(result);
     }
 
     const _transformCurrentWeather = (res) => {
@@ -27,9 +27,18 @@ const useWeatherService = () => {
         }
     }
 
+    const _transformFiveDaysWeather = (res) => {
+        const dailyData = res.list.filter(item => item.dt_txt.includes('18:00:00'));
+
+        return dailyData;
+    }
+
     return {
         getCurrentWeather,
-        getCurrentWeekWeather    
+        getFiveDaysWeather,
+        clearError,
+        process,
+        setProcess
     }
 }
 

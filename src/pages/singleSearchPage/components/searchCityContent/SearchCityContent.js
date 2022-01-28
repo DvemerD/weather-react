@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import Spinner from '../../../../shared/spinner/Spinner';
+import setContent from '../../../../utils/setContent';
 
 import WeatherIconSvgSelector from '../../../../assets/icons/WeatherIconSvgSelector';
 
@@ -17,6 +17,7 @@ const SearchCityContent = () => {
         return () => {
             dispatch(currentWeatherClear());
         }
+       // eslint-disable-next-line 
     }, []);
 
     const onFollowedWeather = (name) => {
@@ -26,11 +27,7 @@ const SearchCityContent = () => {
     return (
         <div className="search__content">
             <div className="search__content-inner">
-                {currentWeatherLoadingStatus === 'first-idle' ? <div className="search__name">Choose city</div> :
-                    currentWeatherLoadingStatus === 'loading' ? <Spinner /> :
-                        currentWeatherLoadingStatus === 'error' ? <div className="search__name">Loading error</div> :
-                            <View data={currentWeather} onFollowedWeather={onFollowedWeather} />
-                }
+                {setContent(currentWeatherLoadingStatus, View, {data: currentWeather, onFollowedWeather})}
             </div>
         </div>
     )

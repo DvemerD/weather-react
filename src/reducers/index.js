@@ -2,8 +2,9 @@ const initialState = {
     menuActive: false,
     themeMode: 'dark',
     currentWeather: {},
-    currentWeatherLoadingStatus: 'first-idle',
-    cityWeatherList: []
+    currentWeatherLoadingStatus: 'waiting',
+    cityWeatherList: [],
+    cityWeatherInfo: ''
 }
 
 const reducer = (state = initialState, action) => {
@@ -27,7 +28,7 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 currentWeather: action.payload,
-                currentWeatherLoadingStatus: 'idle'
+                currentWeatherLoadingStatus: 'confirmed'
             }
         case 'CURRENT_WEATHER_FETCHING_ERROR':
             return {
@@ -38,16 +39,14 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 currentWeather: {},
-                currentWeatherLoadingStatus: 'first-idle'
+                currentWeatherLoadingStatus: 'waiting'
             }
         case 'ADD_CITY_WEATHER_LIST':
             return {
                 ...state,
                 cityWeatherList: !state.cityWeatherList.includes(action.payload) ? 
-                [...state.cityWeatherList, action.payload] : state.cityWeatherList
-                
+                [...state.cityWeatherList, action.payload] : state.cityWeatherList 
             }
-        
         default: return state
     }
 }

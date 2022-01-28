@@ -7,7 +7,6 @@ export const useHttp = () => {
         
         setProcess('loading');
         try {
-            // I removed headers
             const response = await fetch(url, {method, body});
            
             if (!response.ok) {

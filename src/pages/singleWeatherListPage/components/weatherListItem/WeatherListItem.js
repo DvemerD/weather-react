@@ -1,37 +1,31 @@
 import { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import useWeatherService from '../../../../services/WeatherService';
 
-import Spinner from '../../../../shared/spinner/Spinner';
+import setContent from '../../../../utils/setContent';
 
 import WeatherIconSvgSelector from '../../../../assets/icons/WeatherIconSvgSelector';
 
 const WeatherListItem = ({ name }) => {
     const [currentWeather, setCurrentWeather] = useState({});
-    const [loadingStatus, setLoadingStatus] = useState('first-idle');
-    const { getCurrentWeather } = useWeatherService();
+    const { getCurrentWeather, process, setProcess } = useWeatherService();
 
     useEffect(() => {
-        setLoadingStatus('loading');
         getCurrentWeather(name)
             .then(data => {
                 setCurrentWeather(data);
-                setLoadingStatus('idle');
+                setProcess('confirmed');
             })
             .catch((err) => {
-                setLoadingStatus('error');
                 console.log(err);
             });
+        // eslint-disable-next-line
     }, []);
 
     return (
         <Link to={`/weather-info/${name}`}>
             <div className="weather__list-item">
-                {loadingStatus === 'first-idle' ? null :
-                    loadingStatus === 'loading' ? <Spinner /> :
-                        loadingStatus === 'error' ? <div className="search__name">Loading error</div> :
-                            <View data={currentWeather} />}
+                {setContent(process, View, { data: currentWeather })}
             </div>
         </Link>
     )
