@@ -1,8 +1,5 @@
 .weather {
     position: relative;
-    height: 988px;
-    height: 100vh;
-    background: var(#{--weather-list-bgr-default});
     &__wrapper {
         position: relative;
         .swiper-button-prev {

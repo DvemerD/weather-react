@@ -7,6 +7,8 @@ const WeatherDayList = ({ dataWeather }) => {
         )
     });
 
+    const { main: { temp, humidity } } = dataWeather[0];
+
     return (
         <>
             <div className="days-list">
@@ -14,11 +16,14 @@ const WeatherDayList = ({ dataWeather }) => {
             </div>
             <div className="days__avg">
                 <div className="days__avg-item">
-                    <div className="days__avg-name">Avg. Temp: <span
-                        className="days__avg-temp degrees">15&deg;</span></div>
+                    <div className="days__avg-name">Avg. Temp:
+                        <span className="days__avg-temp degrees"> {Math.round(temp)}&deg;</span>
+                    </div>
                 </div>
                 <div className="days__avg-item">
-                    <div className="days__avg-name">Avg. Humd: <span className="days__avg-humb">78%</span></div>
+                    <div className="days__avg-name">Avg. Humd:
+                        <span className="days__avg-humb"> {humidity}%</span>
+                    </div>
                 </div>
             </div>
         </>

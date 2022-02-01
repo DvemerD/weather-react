@@ -1,3 +1,7 @@
+// body {
+$body-bgr-light: linear-gradient(#00b3ffad 0%, #9cff95c7 100%);
+$body-bgr-dark: linear-gradient(#b290ff 0%, #2e1d65 100%);
+
 //header
 $burger-menu-light: #594e78;
 $burger-menu-dark: #fff;
@@ -30,8 +34,8 @@ $menu-list-text-color-dark: #fff;
 
 //weatherList
 
-$weather-list-bgr-light: #fff;
-$weather-list-bgr-dark: linear-gradient(#b290ff 0%, #2e1d65 100%);
+// $weather-list-bgr-light: #fff;
+// $weather-list-bgr-dark: linear-gradient(#b290ff 0%, #2e1d65 100%);
 
 $weather-list-item-bgr-light: #fff;
 $weather-list-item-bgr-dark: linear-gradient(#00057a 0%, #721c87 100%);
@@ -65,8 +69,8 @@ $button-back-bgr-dark: #2b244d;
 
 //weatherSearch
 
-$weather-search-bgr-light: linear-gradient(#00b3ff 0%, #9cff95 100%);
-$weather-search-bgr-dark: linear-gradient(#b290ff 0%, #2e1d65 100%);
+// $weather-search-bgr-light: linear-gradient(#00b3ff 0%, #9cff95 100%);
+// $weather-search-bgr-dark: linear-gradient(#b290ff 0%, #2e1d65 100%);
 
 // $weather-search-wrapper-light: #fff;
 // $weather-search-wrapper-dark: linear-gradient(#b290ff 0%, #2e1d65 100%);
@@ -121,6 +125,10 @@ $spinner-second-circle-light: #5f84fb;
 $spinner-second-circle-dark: #432c85;
 
 :root {
+    // body {
+    --body-bgr-light: #{$body-bgr-light};
+    --body-bgr-dark: #{$body-bgr-dark};
+    --body-bgr-default: var(#{--body-bgr-light});
     //header
     --burger-menu-light: #{$burger-menu-light};
     --burger-menu-dark: #{$burger-menu-dark};
@@ -162,9 +170,9 @@ $spinner-second-circle-dark: #432c85;
 
     //weatherList
 
-    --weather-list-bgr-light: #{$weather-list-bgr-light};
-    --weather-list-bgr-dark: #{$weather-list-bgr-dark};
-    --weather-list-bgr-default: var(#{--weather-list-bgr-light});
+    // --weather-list-bgr-light: #{$weather-list-bgr-light};
+    // --weather-list-bgr-dark: #{$weather-list-bgr-dark};
+    // --weather-list-bgr-default: var(#{--weather-list-bgr-light});
 
     //weatherListItem
 
@@ -212,9 +220,9 @@ $spinner-second-circle-dark: #432c85;
 
     //weatherSearch
 
-    --weather-search-bgr-light: #{$weather-search-bgr-light};
-    --weather-search-bgr-dark: #{$weather-search-bgr-dark};
-    --weather-search-bgr-default: var(#{--weather-search-bgr-light});
+    // --weather-search-bgr-light: #{$weather-search-bgr-light};
+    // --weather-search-bgr-dark: #{$weather-search-bgr-dark};
+    // --weather-search-bgr-default: var(#{--weather-search-bgr-light});
 
     --weather-search-btn-light: #{$weather-search-btn-light};
     --weather-search-btn-dark: #{$weather-search-btn-dark};

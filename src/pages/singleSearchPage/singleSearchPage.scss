@@ -1,8 +1,6 @@
 .search {
-    background: var(#{--weather-search-bgr-default});
-    height: 100vh;
     &__inner {
-        padding: 80px 0 0;
+        padding: 80px 0 ;
     }
     &__wrapper {
         min-height: 825px;
@@ -135,7 +133,7 @@
 @media (max-width: 1919px) {
     .search {
         &__inner {
-            padding: 64px 0 0;
+            padding: 64px 0;
         }
         &__wrapper {
             min-height: 666px;
