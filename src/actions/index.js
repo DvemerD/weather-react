@@ -43,3 +43,18 @@ export const addCityWeatherList = (nameCity) => {
         payload: nameCity
     }
 }
+
+// LOGIN
+
+export const loginUserData = (userData) => {
+    return {
+        type: 'LOGIN_USER_DATA',
+        payload: userData
+    }
+}
+
+export const logoutUserData = () => {
+    return {
+        type: 'LOGOUT_USER_DATA'
+    }
+}

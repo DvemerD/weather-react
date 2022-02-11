@@ -4,7 +4,8 @@ const initialState = {
     currentWeather: {},
     currentWeatherLoadingStatus: 'waiting',
     cityWeatherList: [],
-    cityWeatherInfo: ''
+    userDataStatus: 'waiting',
+    userData: {}
 }
 
 const reducer = (state = initialState, action) => {
@@ -44,8 +45,20 @@ const reducer = (state = initialState, action) => {
         case 'ADD_CITY_WEATHER_LIST':
             return {
                 ...state,
-                cityWeatherList: !state.cityWeatherList.includes(action.payload) ? 
-                [...state.cityWeatherList, action.payload] : state.cityWeatherList 
+                cityWeatherList: !state.cityWeatherList.includes(action.payload) ?
+                    [...state.cityWeatherList, action.payload] : state.cityWeatherList
+            }
+        case 'LOGIN_USER_DATA': {
+            return {
+                ...state,
+                userData: action.payload,
+                userDataStatus: 'confirmed'
+            }
+        }
+        case 'LOGOUT_USER_DATA':
+            return {
+                userData: {},
+                userDataStatus: 'waiting'
             }
         default: return state
     }

@@ -2,21 +2,26 @@ import { useState, useCallback } from "react";
 
 export const useHttp = () => {
     const [process, setProcess] = useState('waiting');
-    
-    const request = useCallback(async (url, method ='GET', body = null, headers = {'Content-Type': 'application/json'}) => {
-        
+
+    const request = useCallback(async (url, method = 'GET', body = null, headers = {}) => {
+
         setProcess('loading');
         try {
-            const response = await fetch(url, {method, body});
-           
+            if (body) {
+                body = JSON.stringify(body);
+                headers['Content-Type'] = 'application/json';
+            }
+
+            const response = await fetch(url, {method, body, headers});
+
             if (!response.ok) {
                 throw new Error(`Could not fetch ${url}, status: ${response.status}`);
             }
-            
+
             const data = await response.json();
-          
+
             return data;
-        } catch(e) {
+        } catch (e) {
             setProcess('error');
             throw e;
         }
@@ -26,5 +31,5 @@ export const useHttp = () => {
         setProcess('loading')
     }, []);
 
-    return { request, clearError, process, setProcess};
+    return { request, clearError, process, setProcess };
 }

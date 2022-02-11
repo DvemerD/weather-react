@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import useAuth from '../../hooks/auth.hook';
 import classNames from 'classnames';
 
 import { menuChangeActive } from '../../actions';
@@ -11,6 +12,7 @@ import './burgerMenu.scss';
 const BurgerMenu = () => {
     const { menuActive } = useSelector(state => state);
     const dispatch = useDispatch();
+    const { logout } = useAuth();
 
     const overlayClass = classNames("overlay", { "overlay_active": menuActive }),
         menuClass = classNames("menu", { "menu_active": menuActive });
@@ -45,9 +47,11 @@ const BurgerMenu = () => {
                         <Link to="/search-city"
                             className="menu__list-item"
                             onClick={() => onMenuActive()}>Add City</Link>
-                        <Link to="/signup"
-                            className="menu__list-item"
-                            onClick={() => onMenuActive()}>Logout</Link>
+                        <div className="menu__list-item"
+                            onClick={() => {
+                                onMenuActive();
+                                logout();
+                            }}>Logout</div>
                     </div>
                 </div>
             </div>
