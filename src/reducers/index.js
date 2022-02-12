@@ -57,6 +57,7 @@ const reducer = (state = initialState, action) => {
         }
         case 'LOGOUT_USER_DATA':
             return {
+                ...state,
                 userData: {},
                 userDataStatus: 'waiting'
             }
