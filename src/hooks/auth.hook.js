@@ -10,8 +10,9 @@ const storageName = 'userData';
 const useAuth = () => {
     const dispatch = useDispatch();
 
-    const login = useCallback((jwtToken, id) => {
-        dispatch(loginUserData({ jwtToken, id }))
+    const login = useCallback((userData) => {
+        const {jwtToken, id} = userData;
+        dispatch(loginUserData(userData));
 
         localStorage.setItem(storageName, JSON.stringify({
             userId: id,

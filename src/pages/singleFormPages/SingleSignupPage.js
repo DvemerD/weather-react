@@ -5,8 +5,8 @@ import './singleFormPage.scss';
 const SingleSignupPage = () => {
     return (
         <section className="form-authorization">
-            <SignupForm/>  
-        </section> 
+            <SignupForm />
+        </section>
     )
 }
 

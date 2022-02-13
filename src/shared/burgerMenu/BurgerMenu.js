@@ -10,7 +10,7 @@ import GlobalSvgSelector from '../../assets/icons/GlobalSvgSelector';
 import './burgerMenu.scss';
 
 const BurgerMenu = () => {
-    const { menuActive } = useSelector(state => state);
+    const { menuActive, userData } = useSelector(state => state);
     const dispatch = useDispatch();
     const { logout } = useAuth();
 
@@ -20,7 +20,7 @@ const BurgerMenu = () => {
     const onMenuActive = () => {
         dispatch(menuChangeActive());
     }
-
+    
     return (
         <>
             <div className={overlayClass}
@@ -37,7 +37,7 @@ const BurgerMenu = () => {
                             <div className="menu__thumbnail">
                                 <GlobalSvgSelector id={'user'}/>
                             </div>
-                            <div className="menu__mail">example@gmail.com</div>
+                            <div className="menu__mail">{userData.email}</div>
                         </div>
                     </div>
                     <div className="menu__list">

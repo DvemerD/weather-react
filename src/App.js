@@ -10,7 +10,7 @@ import BurgerMenu from './shared/burgerMenu/BurgerMenu';
 
 const App = () => {
     const { themeMode, userData } = useSelector(state => state);
-    const isAuthenticated = !!userData.jwtToken;
+    const isAuthenticated = !!userData.token;
     const routes = useRoutes(isAuthenticated);
 
     useEffect(() => {

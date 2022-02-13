@@ -2,10 +2,14 @@ import { Link } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import useAuthService from "../../../services/AuthService";
+import StatusMessage from "../../../shared/statusMessage/StatusMessage";
+
 
 const LoginForm = () => {
-    const { loginHandler } = useAuthService();
-    return (
+    const { loginHandler, process, error, clearError } = useAuthService();
+
+    return (<>
+        {error && <StatusMessage message={error} clearError={clearError} />}
         <Formik
             initialValues={{
                 email: '',
@@ -19,7 +23,8 @@ const LoginForm = () => {
                     .min(6, 'Should be 6 chars minimum')
                     .required('Required field!')
             })}
-            onSubmit={ values => {
+            onSubmit={values => {
+                clearError();
                 loginHandler(values);
             }}
         >
@@ -41,10 +46,15 @@ const LoginForm = () => {
                     placeholder="Password"
                 />
                 <ErrorMessage className="error" name="password" component="div" />
-                <button type="submit" className="form__btn">Log in</button>
+                <button
+                    type="submit"
+                    className="form__btn"
+                    disabled={process === 'loading'}
+                >Log in</button>
                 <p className="form__subtitle">Don't have an account? <Link to="/signup" className="form__link">SIGN UP</Link></p>
             </Form>
         </Formik>
+    </>
     )
 }
 
