@@ -1,22 +1,33 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch  } from 'react-redux';
 import SwiperCore, { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
 
 import WeatherListItem from '../weatherListItem/WeatherListItem';
 import WeatherListItemAdd from '../weatherListItemAdd/WeatherListItemAdd';
+import useCitiesService from '../../../../services/CitiesService';
 
 import 'swiper/swiper.scss';
 import "swiper/modules/navigation/navigation.scss";
+import { useEffect } from 'react';
+import { addCityWeatherList } from '../../../../actions';
 
 SwiperCore.use([Navigation]);
 
 const WeatherList = () => {
+    const dispatch = useDispatch();
     const { cityWeatherList } = useSelector(state => state);
+    const { getCities } = useCitiesService();
 
-    const renderWeathers = cityWeatherList.map((item, i) => {
+    useEffect(() => {
+        getCities()
+            .then(cities => cities.forEach(item => dispatch(addCityWeatherList(item))));
+        
+    }, [])
+
+    const renderWeathers = cityWeatherList.map(({name, _id}) => {
         return (
-            <SwiperSlide key={i}>
-                <WeatherListItem key={i} name={item} />
+            <SwiperSlide key={_id}>
+                <WeatherListItem key={_id} id={_id} name={name} />
             </SwiperSlide>
         )
     });

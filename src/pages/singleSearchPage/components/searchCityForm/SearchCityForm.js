@@ -25,6 +25,7 @@ const SearchCityForm = () => {
                     .required('Enter the name of the city')
             })}
             onSubmit={({ name }) => {
+                
                 dispatch(currentWeatherFetching());
                 getCurrentWeather(name)
                     .then(data => {

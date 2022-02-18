@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import useAuth from '../../hooks/auth.hook';
 import classNames from 'classnames';
 
-import { menuChangeActive } from '../../actions';
+import { menuChangeActive, clearCityWeatherList } from '../../actions';
 
 import GlobalSvgSelector from '../../assets/icons/GlobalSvgSelector';
 
@@ -20,7 +20,14 @@ const BurgerMenu = () => {
     const onMenuActive = () => {
         dispatch(menuChangeActive());
     }
-    
+
+    const onLogout = () => {
+        onMenuActive();
+        dispatch(clearCityWeatherList());
+        logout();
+
+    }
+
     return (
         <>
             <div className={overlayClass}
@@ -35,7 +42,7 @@ const BurgerMenu = () => {
                         </div>
                         <div className="menu__user">
                             <div className="menu__thumbnail">
-                                <GlobalSvgSelector id={'user'}/>
+                                <GlobalSvgSelector id={'user'} />
                             </div>
                             <div className="menu__mail">{userData.email}</div>
                         </div>
@@ -48,10 +55,7 @@ const BurgerMenu = () => {
                             className="menu__list-item"
                             onClick={() => onMenuActive()}>Add City</Link>
                         <div className="menu__list-item"
-                            onClick={() => {
-                                onMenuActive();
-                                logout();
-                            }}>Logout</div>
+                            onClick={() => onLogout()}>Logout</div>
                     </div>
                 </div>
             </div>

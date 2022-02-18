@@ -11,13 +11,8 @@ const useAuth = () => {
     const dispatch = useDispatch();
 
     const login = useCallback((userData) => {
-        const {jwtToken, id} = userData;
         dispatch(loginUserData(userData));
-
-        localStorage.setItem(storageName, JSON.stringify({
-            userId: id,
-            token: jwtToken
-        }))
+        localStorage.setItem(storageName, JSON.stringify(userData));
     }, []);
 
     const logout = useCallback(() => {
@@ -30,7 +25,7 @@ const useAuth = () => {
         const data = JSON.parse(localStorage.getItem(storageName));
 
         if (data && data.token) {
-            login(data.token, data.userId);
+            login(data);
         }
 
     }, [login]);

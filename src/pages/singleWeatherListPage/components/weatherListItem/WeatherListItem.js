@@ -6,7 +6,7 @@ import setContent from '../../../../utils/setContent';
 
 import WeatherIconSvgSelector from '../../../../assets/icons/WeatherIconSvgSelector';
 
-const WeatherListItem = ({ name }) => {
+const WeatherListItem = ({ name, id }) => {
     const [currentWeather, setCurrentWeather] = useState({});
     const { getCurrentWeather, process, setProcess } = useWeatherService();
 
@@ -22,9 +22,18 @@ const WeatherListItem = ({ name }) => {
         // eslint-disable-next-line
     }, []);
 
+    const onDeleteCity = (event, id) => {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+
     return (
         <Link to={`/weather-info/${name}`}>
             <div className="weather__list-item">
+                <div
+                    className="weather__delete-item"
+                    onClick={(event) => onDeleteCity(event, id)}
+                ><span>&#215;</span></div>
                 {setContent(process, View, { data: currentWeather })}
             </div>
         </Link>

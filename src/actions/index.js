@@ -44,6 +44,19 @@ export const addCityWeatherList = (nameCity) => {
     }
 }
 
+export const deleteCityWeatherList = (city) => {
+    return {
+        type: 'DELETE_CITY_WEATHER_LIST',
+        payload: city
+    }
+}
+
+export const clearCityWeatherList = () => {
+    return {
+        type: 'CLEAR_CITY_WEATHER_LIST'
+    }
+}
+
 // LOGIN
 
 export const loginUserData = (userData) => {

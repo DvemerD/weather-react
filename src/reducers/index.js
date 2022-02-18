@@ -43,10 +43,22 @@ const reducer = (state = initialState, action) => {
                 currentWeatherLoadingStatus: 'waiting'
             }
         case 'ADD_CITY_WEATHER_LIST':
+            console.log(state.cityWeatherList)
+            const nameCity = action.payload.name;
             return {
                 ...state,
-                cityWeatherList: !state.cityWeatherList.includes(action.payload) ?
-                    [...state.cityWeatherList, action.payload] : state.cityWeatherList
+                cityWeatherList: state.cityWeatherList.some(({name}) => name === nameCity) ?
+                    state.cityWeatherList : [...state.cityWeatherList, action.payload]
+            }
+        case 'DELETE_CITY_WEATHER_LIST':
+            return {
+                ...state,
+                cityWeatherList: !state.cityWeatherList.filter(({ _id }) => _id === action.payload._id)
+            }
+        case 'CLEAR_CITY_WEATHER_LIST':
+            return {
+                ...state,
+                cityWeatherList: []
             }
         case 'LOGIN_USER_DATA': {
             return {

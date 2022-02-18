@@ -1,17 +1,19 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-
+import useCitiesService from '../../../../services/CitiesService';
 import setContent from '../../../../utils/setContent';
 
 import WeatherIconSvgSelector from '../../../../assets/icons/WeatherIconSvgSelector';
 
 import {currentWeatherClear, addCityWeatherList} from '../../../../actions';
 
+
 const SearchCityContent = () => {
     const dispatch = useDispatch();
     const { currentWeather,
             currentWeatherLoadingStatus } = useSelector(state => state);
+    const {addCities} = useCitiesService();
 
     useEffect(() => {
         return () => {
@@ -21,7 +23,9 @@ const SearchCityContent = () => {
     }, []);
 
     const onFollowedWeather = (name) => {
-        dispatch(addCityWeatherList(name)); 
+        addCities(name)
+            .then(({city}) => console.log(city))
+            .catch(err => console.log(err)); 
     }
 
     return (
